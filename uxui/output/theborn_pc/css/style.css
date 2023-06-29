@@ -112,8 +112,7 @@ body{font-size:16px; color:#fff; background:#191919; font-family:'Noto Sans KR',
 
 /* Main > Brand */
 .brand{position:relative;width:100%;height:550px}
-.brand .link{display:block;width:100%;height:100%}
-.brand .link:after{display:block;width:100%;height:550px;background-image:url(../images/img_brand_bg.jpg);background-repeat:no-repeat;background-position:center;background-size:cover;background-attachment:fixed;content:''}
+.brand:after{display:block;width:100%;height:550px;background-image:url(../images/img_brand_bg.jpg);background-repeat:no-repeat;background-position:center;background-size:cover;background-attachment:fixed;content:''}
 .brand .tit{position:absolute;left:50%;top:40%;transform:translate(-50%,-50%)}
 .brand .tit .text_small{display:block;font-size:26px;line-height:1.2;font-weight:100}
 .brand .tit .text_emphasis{display:inline-block;padding-top:16px;font-size:60px;line-height:1.2}

@@ -130,11 +130,12 @@ body{font-size:16px; color:#fff; background:#191919; font-family:'Noto Sans KR',
 .news .tab_list > .tab_item:nth-of-type(5) .tab_btn{border-right:0}
 .news .tab_list > .tab_item:hover:nth-of-type(5) .tab_btn{background:#000}
 .news .tab_panel{padding:20px;width:600px;min-height:280px;background:rgba(0,0,0,.2);box-sizing:border-box}
+.news .tab_panel_list .tab_panel_item{display:flex;justify-content:space-between}
 .news .tab_panel_list .tab_panel_item_link{overflow:hidden;display:inline-block;width:464px;font-size:15px;line-height:3;color:#fff;white-space:nowrap;text-overflow:ellipsis;vertical-align:middle}
 .news .tab_panel_list .tab_panel_item_link .txt_pink{display:inline-block;padding-right:5px;font-weight:500;color:#eeb397}
 .news .tab_panel_list .tab_panel_item_link{position:relative}
 .news .tab_panel_list .tab_panel_item_link:hover::after{position:absolute;left:0;bottom:5px;width:100%;height:1px;background:#fff;content:''}
-.news .tab_panel_list .date{margin-left:20px;height:48px;font-size:14px;color:#fff;line-height:48px;vertical-align:middle}
+.news .tab_panel_list .date{font-size:14px;color:#fff;line-height:48px;vertical-align:middle}
 
 .news .franchise{position:relative; width:600px;}
 .news .franchise:after{display:block;width:100%;height:330px;background-image:url(../images/img_franchise.jpg);background-repeat:no-repeat;background-position:center;background-size:cover;content:''}

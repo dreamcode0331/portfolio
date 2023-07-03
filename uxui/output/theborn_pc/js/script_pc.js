@@ -32,21 +32,15 @@ $(function(){
 		$(this).addClass('active');
 	});
 
-	// 메인 슬라이드 텍스트
-	$(".banner_slide .banner_text").waypoint(function(){
-		$(".banner_slide .banner_text .text_small").addClass("animated fadeInLeft")
-		$(".banner_slide .banner_text .text_emphasis").addClass("animated fadeInRight")
-	}, {offset:"50%"});
-
 	// select_box 클릭 했을 때,
 	$('.dropdown_btn').on('click', function(){
 		$(this).parent('.family_site_dropdown').toggleClass('is_open');
 	});
 
 	// 스와이퍼 슬라이드
-	var mySwiper1 = new Swiper ('.banner_slide', {
-		autoplay: false,
-		loop: true,
+	var mySwiper1 = new Swiper ('.swiper-container.banner_slide', {
+		autoplay: true,
+		loop: false,
 		pagination: {
 			el: '.swiper-pagination',
 			clickable: true,
@@ -57,14 +51,12 @@ $(function(){
 		}
 	});
 
-	var mySwiper2 = new Swiper ('.vertical_slide', {
+	var mySwiper2 = new Swiper ('.swiper-container.vertical_slide', {
 		slidesPerView: 3,
 		spaceBetween: 30,
-		loopFillGroupWithBlank: true,
-		loop: true,
 		navigation: {
 			nextEl: '.swiper-button-next',
-				prevEl: '.swiper-button-prev',
+			prevEl: '.swiper-button-prev',
 		},
 	});
 

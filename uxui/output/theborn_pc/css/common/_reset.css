@@ -1,0 +1,22 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,700&display=swap');
+/* Common */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,p,table,th,td,form,fieldset,legend,textarea,input,select,textarea,button,article,aside,dialog,footer,header,section,footer,nav,figure,main{margin:0;padding:0}
+article,aside,dialog,footer,header,section,footer,nav,figure,main{display:block}
+html,body{height:100%;-webkit-text-size-adjust:none;-ms-text-size-adjust:none}
+body,input,select,textarea,button{font-family:'Noto Sans KR','나눔고딕',NanumGothic,'맑은 고딕','Malgun Gothic','돋움',Dotum,'굴림',Gulim,Helvetica;background:#191919;font-size:16px;color:#fff;line-height:1.5}
+fieldset,li,img{border:0;vertical-align:top}
+ul,ol{list-style:none}
+button{overflow:visible;border:0;background-color:transparent;cursor:pointer}
+button::-moz-focus-inner{padding:0;border:0}
+input,button,select{border:0;-webkit-border-radius:0;border-radius:0;-webkit-appearance:none;-moz-appearance:none;appearance:none}
+select{border: 1px solid #05141f;
+  outline: 0;}
+address,caption,em{font-style:normal}
+img, video, iframe{max-width:100%;outline:0}
+a {text-decoration:none;color:inherit}
+a:focus,a:active,a:hover{text-decoration:none}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:none}
+.blind,caption span,legend{overflow:hidden;position:absolute;top:0;left:0;width:1px;height:1px;font-size:1px;line-height:100px;white-space:nowrap}
+input{-webkit-appearance:none;appearance:none}

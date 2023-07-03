@@ -5,21 +5,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1,viewport-fit=cover">
 	<title>THEBORN KOREA</title>
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/plugin/animate.css">
+	<link rel="stylesheet" href="css/common/_reset.css">
+	<link rel="stylesheet" href="css/common/_font.css">
 	<link rel="stylesheet" href="css/plugin/swiper.css">
-	<link rel="stylesheet" href="css/style2.css">
+	<link rel="stylesheet" href="css/style_mo.css">
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/plugin/swiper.js"></script>
-	<script src="js/plugin/plugin.js"></script>
-	<script src="js/script2.js"></script>
+	<script src="js/script_mo.js"></script>
 </head>
 <body>
 	<!-- [D] wrap -->
 	<div class="wrap">
 		<!-- [D] HEADER -->
 		<header class="header">
-			<span class="menu"><img src="images/ico_menu_bar.png" alt="메뉴"></span>
+			<button type="button" class="menu"><span class="blind">메뉴</span></button>
 			<h1 class="logo"><a href="index.html"><img src="images/logo.png" alt="더본코리아"></a></h1>
 			<div class="side_bar">
 				<nav class="gnb">
@@ -36,9 +35,9 @@
 						<li class="menu_item">
 							<a href="#" role="button" class="menu_link">브랜드</a>
 							<ul class="sub_menu_list">
-								<li class="sub_menu_item"><a href="brand.html" class="sub_menu_link">대표브랜드</a></li>
-								<li class="sub_menu_item"><a href="brand.html" class="sub_menu_link">글로벌브랜드</a></li>
-								<li class="sub_menu_item"><a href="brand.html" class="sub_menu_link">테스트브랜드</a></li>
+								<li class="sub_menu_item"><a href="brand_mo.html" class="sub_menu_link">대표브랜드</a></li>
+								<li class="sub_menu_item"><a href="brand_mo.html" class="sub_menu_link">글로벌브랜드</a></li>
+								<li class="sub_menu_item"><a href="brand_mo.html" class="sub_menu_link">테스트브랜드</a></li>
 							</ul>
 						</li>
 						<li class="menu_item">
@@ -160,6 +159,42 @@
 					</div>
 					<div class="swiper-container vertical_slide">
 						<ul class="swiper-wrapper food_list">
+							<li class="swiper-slide food_item">
+								<a class="food_link">
+									<img src="images/img_special_menu1.jpg" alt="돼지고기 교자">
+									<div class="food_text">
+										<span class="text_small">뒷다리살 돼지고기와<br>각종 야채</span>
+										<strong class="text_emphasis">돼기고기 교자</strong>
+									</div>	
+									<div class="mask">
+										<span class="ico_box"><span class="blind">자세히보기</span></span>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide food_item">
+								<a class="food_link">
+									<img src="images/img_special_menu2.jpg" alt="홍합찜">
+									<div class="mask">
+										<span class="ico_box"><span class="blind">자세히보기</span></span>
+									</div>
+									<div class="food_text">
+										<span class="text_small">부드러운 레드와인과<br>향긋한 레몬의 조화</span>
+										<strong class="text_emphasis">홍합찜</strong>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide food_item">
+								<a class="food_link">
+									<img src="images/img_special_menu3.jpg" alt="커리파스타">
+									<div class="food_text">
+										<span class="text_small">풍미짙은 커리와<br>향긋한 바질의 만남</span>
+										<strong class="text_emphasis">커리파스타</strong>
+									</div>
+									<div class="mask">
+										<span class="ico_box"><span class="blind">자세히보기</span></span>
+									</div>
+								</a>
+							</li>
 							<li class="swiper-slide food_item">
 								<a class="food_link">
 									<img src="images/img_special_menu1.jpg" alt="돼지고기 교자">

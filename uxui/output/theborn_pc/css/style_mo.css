@@ -1,8 +1,6 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,700&display=swap');
-body{min-width:320px;font-size:16px;background:#191919;color:#fff;font-weight:normal;font-family:'Noto Sans KR',sans-serif;}
-.wrap{position:relative;width:100%;}
-/* .inner{position:relative;margin:0 auto;width:1230px} */
+body{min-width:320px}
+.wrap{position:relative;width:100%}
 
 /* [Common] Button */
 .btn{display:inline-block;position:relative;font-size:16px;text-align:center;color:#fff;box-sizing:border-box;transition:0.5s} 
@@ -16,14 +14,13 @@ body{min-width:320px;font-size:16px;background:#191919;color:#fff;font-weight:no
 .btn.lang.eng:before{background-image:url(../images/ico_lang_eng.png)} 
 
 /* [Common] Input */
-.inp{width:100%;height:40px;padding:0 14px;border:1px solid #dcdcdc;color:#000;font-size:14px;line-height:40px;box-sizing:border-box}
+.inp{width:100%;height:40px;padding:0 14px;border:1px solid #dcdcdc;background:#fff;color:#000;font-size:14px;line-height:40px;box-sizing:border-box}
 .inp::placeholder{color:#dcdcdc}
 .inp:disabled{background-color:rgba(242, 244, 246, 0.5);border-color:#dcdcdc;color:#dcdcdc;pointer-events:none}
 .inp:read-only:not([disabled]){background-color:rgba(242, 244, 246, 0.5)}
 
 /* [Common] Pagination */
-.pagination{position:relative;padding-top:50px;font-size:0}
-.pagination .align_right{margin-top:20px;text-align:right}
+.pagination{position:relative;padding:50px 0;text-align:center;font-size:0}
 .btn_page{display:inline-block;padding:5px 2px;vertical-align:middle}
 .btn_page:after{display:block;width:12px;height:12px;background-repeat:no-repeat;background-position:center;background-size:cover;content:''}
 .btn_page.btn_first:after{background-image:url(../images/ico_pagination_first.svg)}
@@ -41,14 +38,15 @@ body{min-width:320px;font-size:16px;background:#191919;color:#fff;font-weight:no
 
 /* Header */
 .header{position:fixed;left:0;top:0;right:0;z-index:20;height:55px;background:#000}
-.header .menu{display:inline-block;padding:20px;width:20px}
+.header .menu{padding:17px 16px 14px}
+.header .menu:before{display:inline-block;width:24px;height:20px;background-image:url(../images/ico_menu_bar.png);background-repeat:no-repeat;background-position:center;background-size:cover;content:''}
 .header .menu img{display:block}
 .header.top{background:rgba(0,0,0,.8)}
 .header .logo{position:absolute;top:0;left:50%;transform:translateX(-50%);padding:13px}
 .header .header_depth_bg{display:none;position:fixed;left:0;top:0;right:0;z-index:-1;height:100%;background:rgba(0,0,0,.7)}
 .header .header_depth_bg.is_selected{height:100%}
-.header .side_bar{position:fixed;left:-85%;top:0;width:85%;height:100%;background:#363636;transition:all 0.5s}
-.header .side_bar.is_open{left:0}
+.header .side_bar{display:none;position:fixed;left:-85%;top:0;width:85%;height:100%;background:#363636;transition:all 0.5s}
+.header .side_bar.is_open{display:block;				left:0}
 .header .logo img{display:block;width:100px}
 
 .header .gnb{position:relative;font-size:0}
@@ -95,7 +93,7 @@ body{min-width:320px;font-size:16px;background:#191919;color:#fff;font-weight:no
 /* Main > Section */
 .section .tit{width:100%;text-align:center}
 .section .tit h2{font-size:26px;font-weight:normal}
-.section .tit p{margin-bottom:29px;font-size:16px;font-weight:100;line-height:26px;color:#b7b7b7}
+.section .tit p{margin-bottom:29px;font-size:16px;font-weight:300;line-height:26px;color:#b7b7b7}
 .section .tit .line:after{display:inline-block;margin:12px 0;width:35px;height:2px;background:#e61d25;content:''}
 .section .food_text .text_small{display:block;font-size:14px;font-weight:100}
 .section .food_text .text_emphasis{font-size:20px;font-weight:500}
@@ -145,13 +143,13 @@ body{min-width:320px;font-size:16px;background:#191919;color:#fff;font-weight:no
 .news .tab_list .tab_item{display:inline-block;width:20%}
 .news .tab_list .tab_item .tab_btn{width:100%;height:30px;border-width:0;border-right:1px solid #333;background:#000;font-size:13px;color:#eee;cursor:pointer}
 .news .tab_list .tab_item .tab_link{display:inline-block;width:100%;height:30px;border-width:0;background:#000;font-size:13px;color:#eee;line-height:30px;text-align:center;box-sizing:border-box;cursor:pointer}
-.news .tab_list .tab_item.active .tab_btn{color:#fff;border-right-color:transparent;background:#e61d25;}
+.news .tab_list .tab_item.is_active .tab_btn{color:#fff;border-right-color:transparent;background:#e61d25;}
 .news .tab_list > .tab_item:nth-of-type(5) .tab_btn{border-right:0}
 .news .tab_list > .tab_item:hover:nth-of-type(5) .tab_btn{background:#000}
 .news .tab_panel{padding:10px;width:100%;min-height:280px;background:rgba(0,0,0,.2);box-sizing:border-box}
 .news .tab_panel_list .tab_panel_item{display:flex;justify-content:space-between}
 .news .tab_panel_list .tab_panel_item_link{overflow:hidden;display:inline-block;position:relative;width:81%;font-size:13px;line-height:40px;color:#fff;white-space:nowrap;text-overflow:ellipsis;vertical-align:middle}
-.news .tab_panel_list .tab_panel_item_link .txt_pink{display:inline-block;padding-right:3px;font-size:13px;font-weight:500;color:#eeb397}
+.news .tab_panel_list .tab_panel_item_link .txt_pink{display:inline-block;padding-right:3px;font-size:13px;font-weight:400;color:#eeb397}
 .news .tab_panel_list .tab_panel_item_link:hover::after{position:absolute;left:0;bottom:5px;width:100%;height:1px;background:#fff;content:''}
 .news .tab_panel_list .date{overflow:hidden;font-size:13px;color:#fff;line-height:40px;white-space:nowrap;text-overflow:ellipsis}
 
@@ -164,7 +162,7 @@ body{min-width:320px;font-size:16px;background:#191919;color:#fff;font-weight:no
 
 /* footer */
 .footer{position:relative;padding:50px 0 100px;background:#0a0a0a}
-.footer .inner{display:flex;flex-direction:column;padding:0 10px}
+.footer .inner{display:flex;flex-direction:column;padding:0 15px}
 .footer .company{display:flex;flex-direction:column;width:100%;color:#666}
 
 .footer .company_info_list{font-size:0}
@@ -181,7 +179,7 @@ body{min-width:320px;font-size:16px;background:#191919;color:#fff;font-weight:no
 .footer .social .social_link img{display:block;max-width:100%}
 
 .family_site_dropdown{position:relative;margin-top:20px;width:250px;height:46px;line-height:46px;font-size:15px;color:#000}
-.family_site_dropdown .dropdown_btn{display:block;width:100%;padding:9px 30px 9px 14px;border-radius:4px;background:#fff;font-size:14px;text-align:left}
+.family_site_dropdown .dropdown_btn{display:block;width:100%;padding:9px 30px 9px 14px;border-radius:4px;background:#fff;font-size:14px;text-align:left;color:#000}
 .family_site_dropdown .dropdown_btn:after{position:absolute;top:12px;right:15px;width:16px;height:16px;background-image:url(../images/ico_arrow_bottom.png);background-repeat:no-repeat;background-position:center;background-size:cover;content:''}
 .family_site_dropdown .dropdown_box{display:none;overflow:hidden;position:absolute;bottom:50px;left:0;right:0;border:1px solid #fff;border-radius:4px;background:#fff;box-shadow:2px 2px 8px rgba(0, 0, 0, 0.08);box-sizing:border-box}
 .family_site_dropdown .dropdown_box .dropdown_list{overflow-y:auto;max-height:132px;padding:6px;box-sizing:border-box}
@@ -195,47 +193,50 @@ body{min-width:320px;font-size:16px;background:#191919;color:#fff;font-weight:no
 
 /* Sub Page > Brand > Banner Area */
 .banner_area{position:relative}
-.banner_area:before{display:block;margin-top:70px;width:100%;height:460px;background-image:url(../images/img_banner4.jpg);background-repeat:no-repeat;background-position:center;background-size:cover;content:''}
-.banner_area .tit{position:absolute;left:50%;top:43%;transform:translate(-50%,-50%);font-size:50px;font-weight:100}
-.banner_area .tit .text_small{display:block;font-size:26px;line-height:1.2;font-weight:100}
-.banner_area .tit .text_emphasis{display:inline-block;padding-top:16px;font-size:60px;line-height:1.2}
+.banner_area:before{display:block;margin-top:55px;width:100%;height:275px;background-image:url(../images/img_banner4.jpg);background-repeat:no-repeat;background-position:center;background-size:cover;content:''}
+.banner_area .tit{position:absolute;left:50%;top:43%;transform:translate(-50%,-50%);text-align:center;font-weight:100}
+.banner_area .tit .text_small{display:block;font-size:16px;line-height:1.2;font-weight:100}
+.banner_area .tit .text_emphasis{display:inline-block;padding-top:16px;font-size:30px;line-height:1.2}
 
-.the_born_brand{padding:100px 0;background:#f9f9f9}
-.inner + .inner{display:flex;justify-content:space-between;padding-top:24px}
+.the_born_brand{padding:10px 0;background:#f9f9f9}
+.the_born_brand .inner{padding:0 15px}
+.inner + .inner{display:flex;flex-direction:column;justify-content:space-between;padding-top:40px}
 
 /* Sub Page > Brand > Sitemap */
 .sitemap{text-align:right}
 .sitemap .map_list .map_item{display:inline-block}
 .sitemap .map_list .map_item:after{display:inline-block;width:21px;height:21px;background-image:url(../images/ico_arrow_right.png);background-repeat:no-repeat;background-position:center;background-size:cover;vertical-align:bottom;content:''}
 .sitemap .map_list .map_item:last-child:after{display:none}
-.sitemap .map_list .map_item .link{line-height:21px;font-size:15px;color:#888}
+.sitemap .map_list .map_item .link{line-height:21px;font-size:13px;color:#888}
 .sitemap .map_list .map_item .link:hover{text-decoration:underline;text-underline-position:under;color:#000}
 .sitemap .map_list .map_item .link.on{text-decoration:underline;text-underline-position:under;color:#000;font-weight:500}
 
 /* Sub Page > Brand > Search Area */
-.search_area{max-width:270px;height:100%;box-shadow:0 0 8px 0 rgba(0,0,0,.3)}
-.search_area .search_head{display:inline-block;padding:20px;width:100%;background:#191919;font-size:20px;text-align:center;box-sizing:border-box}
-.search_area .search_brand_list .search_brand_ltem{border-bottom:1px solid #dcdcdc;background:#fff}
-.search_area .search_brand_list .search_brand_ltem .btn_ico{display:block;padding:30px 20px;width:100%;text-align:left;font-size:18px;color:#666;line-height:21px}
-.search_area .search_brand_list .search_brand_ltem .btn_ico:before{display:inline-block;margin-right:12px;width:21px;height:21px;background-repeat:no-repeat;background-position:center;background-size:cover;vertical-align:top;opacity:0.6;content:''}
-.search_area .search_brand_list .search_brand_ltem .btn_ico:hover{color:#000}
-.search_area .search_brand_list .search_brand_ltem .btn_ico:hover:before {opacity:1}
-.search_area .search_brand_list .search_brand_ltem:nth-child(1) .btn_ico:before{background-image:url(../images/ico_brand_like.png)}
-.search_area .search_brand_list .search_brand_ltem:nth-child(2) .btn_ico:before{background-image:url(../images/ico_brand_global.png)}
-.search_area .search_brand_list .search_brand_ltem:nth-child(3) .btn_ico:before{background-image:url(../images/ico_brand_question.png)}
-.search_area .search_bottom{padding:30px 20px;background:#fff}
+.search_area .search_head{display:none;padding:20px;width:100%;background:#191919;font-size:20px;text-align:center;box-sizing:border-box}
+.search_area .search_brand_list{display:flex;height:38px;border-bottom:2px solid #191919}
+.search_area .search_brand_list .search_brand_ltem{flex:1}
+.search_area .search_brand_list .search_brand_ltem .btn_ico{display:block;position:relative;padding:5px;width:100%;height:40px;border:1px solid #dcdcdc;border-left:0;border-bottom-width:2px;border-bottom-color:#191919;background:#f9f9f9;text-align:center;font-size:14px;color:#666;line-height:16px}
+.search_area .search_brand_list .search_brand_ltem:first-child .btn_ico{border-left:1px solid #dcdcdc}
+.search_area .search_brand_list .search_brand_ltem .btn_ico:before,.search_area .search_brand_list .search_brand_ltem .btn_ico:after{position:absolute;bottom:-2px;width:1px;height:2px;background:#191919;content:''}
+.search_area .search_brand_list .search_brand_ltem .btn_ico:before{left:-1px}
+.search_area .search_brand_list .search_brand_ltem .btn_ico:after{right:-1px}
+.search_area .search_brand_list .search_brand_ltem .btn_ico.is_active{border-color:#191919;border-top-width:2px;border-bottom:2px solid #f9f9f9}
+.search_area .search_brand_list .search_brand_ltem .btn_ico.is_active:before,.search_area .search_brand_list .search_brand_ltem .btn_ico.is_active:after{top:-2px;width:2px;height:100%;border-top:4px solid #191919;background:#191919}
+.search_area .search_brand_list .search_brand_ltem .btn_ico.is_active:before{left:-1px}
+.search_area .search_brand_list .search_brand_ltem .btn_ico.is_active:after{right:-1px}
+
+.search_area .search_bottom{padding:15px 0}
 .search_area .search_bottom .inp_box{display:inline-block;position:relative;width:100%}
 .search_area .search_bottom .inp_box .inp{padding:0 40px 0 10px}
 .search_area .search_bottom .inp_box .btn_search{display:inline-block;position:absolute;top:0;right:0;padding:9px 10px 7px 9px}
 .search_area .search_bottom .inp_box .btn_search:before{display:inline-block;width:21px;height:21px;background-image:url(../images/ico_search.png);background-repeat:no-repeat;background-position:center;background-size:cover;vertical-align:top;content:''}
 
 /* Sub Page > Brand > Brand List Area */
-.brand_list_area{text-align:center}
-.brand_list{display:grid;grid-template-columns:repeat(3, 1fr);gap:26px;max-width:907px}
-.brand_list .brand_item{width:285px;}
+.brand_list_area{padding-top:15px}
+.brand_list{display:grid;grid-template-columns:repeat(3, 1fr);gap:8px}
 .brand_list .brand_item .link{position:relative;display:block;}
 .brand_list .brand_item .link:before{opacity:0;position:absolute;left:50%;bottom:-70px;transform:translate(-50%);width:0;height:0;background-image:url(../images/search-icon.png);background-repeat:no-repeat;background-position:center;background-size:cover;transition:all 0.5s;content:''}
-.brand_list .brand_item .link:after{display:block;height:334px;background-repeat:no-repeat;background-position:center;background-size:cover;content:''}
+.brand_list .brand_item .link:after{display:block;height:130px;background-repeat:no-repeat;background-position:center;background-size:cover;content:''}
 .brand_list .brand_item:nth-child(1) .link:after{background-image:url(../images/img_brand1.jpg)}
 .brand_list .brand_item:nth-child(2) .link:after{background-image:url(../images/img_brand2.jpg)}
 .brand_list .brand_item:nth-child(3) .link:after{background-image:url(../images/img_brand3.jpg)}
@@ -245,10 +246,10 @@ body{min-width:320px;font-size:16px;background:#191919;color:#fff;font-weight:no
 .brand_list .brand_item:nth-child(7) .link:after{background-image:url(../images/img_brand7.jpg)}
 .brand_list .brand_item:nth-child(8) .link:after{background-image:url(../images/img_brand8.jpg)}
 .brand_list .brand_item:nth-child(9) .link:after{background-image:url(../images/img_brand9.jpg)}
-.brand_list .brand_item .link:hover:before{opacity:0.8;bottom:160px;width:50px;height:50px;}
-.brand_list .brand_item .link .bottom{position:absolute;left:0;right:0;bottom:0;width:100%;height:70px;background:rgba(0,0,0,.8);text-align:center;line-height:70px}
-.brand_list .brand_item .link .bottom .brand_name{display:inline-block;position:relative;color:#fff}
-.brand_list .brand_item .link .bottom .brand_name:before{position:absolute;left:50%;top:18px;transform:translate(-50%);width:30px;height:2px;background:#e61d25;content:''}
+.brand_list .brand_item .link:hover:before{opacity:0.8;bottom:67px;width:25px;height:25px;}
+.brand_list .brand_item .link .bottom{position:absolute;left:0;right:0;bottom:0;width:100%;height:40px;background:rgba(0,0,0,.8);font-size:13px;text-align:center;line-height:48px}
+.brand_list .brand_item .link .bottom .brand_name{display:inline-block;height:100%}
+.brand_list .brand_item .link .bottom .brand_name:before{position:absolute;left:50%;top:9px;transform:translate(-50%);width:15px;height:2px;background:#e61d25;content:''}
 
 
 /* Keyframes */

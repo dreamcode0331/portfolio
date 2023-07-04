@@ -1,0 +1,16 @@
+/* MyriadPro */
+@font-face {
+  font-family:'MyriadPro';
+  src: url('../../font/MyriadPro-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:'MyriadPro';
+  src: url('../../font/MyriadPro-Bold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+

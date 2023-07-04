@@ -64,10 +64,7 @@ body{min-width:320px}
 .header .gnb .sub_menu_list .sub_menu_item .sub_menu_link{display:block;padding:10px 20px;width:100%;font-size:14px;font-weight:300;color:#191919;box-sizing:border-box}
 .header .gnb .sub_menu_list .sub_menu_item:first-child{padding-top:10px}
 .header .gnb .sub_menu_list .sub_menu_item:last-child{padding-bottom:10px}
-
 .header .gnb .menu_item.is_open .menu_link:after{transform:rotate(180deg)}
-/* .header .gnb .sub_menu_list.is_open{display:block} */
-
 .header .lang_box{padding:15px 20px;font-size:0}
 .header .lang_box .btn + .btn{margin-left:5px}
 
@@ -164,7 +161,6 @@ body{min-width:320px}
 .footer{position:relative;padding:50px 0 100px;background:#0a0a0a}
 .footer .inner{display:flex;flex-direction:column;padding:0 15px}
 .footer .company{display:flex;flex-direction:column;width:100%;color:#666}
-
 .footer .company_info_list{font-size:0}
 .footer .company_info_list li{display:inline-block;font-size:13px}
 .footer .company_info_list li:after{display:inline-block;margin:0 10px;width:1px;height:10px;background:#666;vertical-align:middle;content:''}
@@ -212,19 +208,13 @@ body{min-width:320px}
 .sitemap .map_list .map_item .link.on{text-decoration:underline;text-underline-position:under;color:#000;font-weight:500}
 
 /* Sub Page > Brand > Search Area */
-.search_area .search_head{display:none;padding:20px;width:100%;background:#191919;font-size:20px;text-align:center;box-sizing:border-box}
-.search_area .search_brand_list{display:flex;height:38px;border-bottom:2px solid #191919}
-.search_area .search_brand_list .search_brand_ltem{flex:1}
-.search_area .search_brand_list .search_brand_ltem .btn_ico{display:block;position:relative;padding:5px;width:100%;height:40px;border:1px solid #dcdcdc;border-left:0;border-bottom-width:2px;border-bottom-color:#191919;background:#f9f9f9;text-align:center;font-size:14px;color:#666;line-height:16px}
+.search_area .search_head{display:none;padding:20px;width:100%;background:#979797;font-size:20px;text-align:center;box-sizing:border-box}
+.search_area .search_brand_list{height:38px;border-bottom:2px solid #dcdcdc;font-size:0}
+.search_area .search_brand_list .search_brand_ltem{display:inline-block;margin-left:-1px;min-width:100px;height:100%}
+.search_area .search_brand_list .search_brand_ltem:first-child{margin-left:0}
+.search_area .search_brand_list .search_brand_ltem .btn_ico{position:relative;width:100%;height:100%;border:1px solid #dcdcdc;border-bottom:0;border-radius:8px 20px 0 0;font-size:14px;color:#666}
 .search_area .search_brand_list .search_brand_ltem:first-child .btn_ico{border-left:1px solid #dcdcdc}
-.search_area .search_brand_list .search_brand_ltem .btn_ico:before,.search_area .search_brand_list .search_brand_ltem .btn_ico:after{position:absolute;bottom:-2px;width:1px;height:2px;background:#191919;content:''}
-.search_area .search_brand_list .search_brand_ltem .btn_ico:before{left:-1px}
-.search_area .search_brand_list .search_brand_ltem .btn_ico:after{right:-1px}
-.search_area .search_brand_list .search_brand_ltem .btn_ico.is_active{border-color:#191919;border-top-width:2px;border-bottom:2px solid #f9f9f9}
-.search_area .search_brand_list .search_brand_ltem .btn_ico.is_active:before,.search_area .search_brand_list .search_brand_ltem .btn_ico.is_active:after{top:-2px;width:2px;height:100%;border-top:4px solid #191919;background:#191919}
-.search_area .search_brand_list .search_brand_ltem .btn_ico.is_active:before{left:-1px}
-.search_area .search_brand_list .search_brand_ltem .btn_ico.is_active:after{right:-1px}
-
+.search_area .search_brand_list .search_brand_ltem .btn_ico.is_active{background:#dcdcdc}
 .search_area .search_bottom{padding:15px 0}
 .search_area .search_bottom .inp_box{display:inline-block;position:relative;width:100%}
 .search_area .search_bottom .inp_box .inp{padding:0 40px 0 10px}
@@ -250,7 +240,6 @@ body{min-width:320px}
 .brand_list .brand_item .link .bottom{position:absolute;left:0;right:0;bottom:0;width:100%;height:40px;background:rgba(0,0,0,.8);font-size:13px;text-align:center;line-height:48px}
 .brand_list .brand_item .link .bottom .brand_name{display:inline-block;height:100%}
 .brand_list .brand_item .link .bottom .brand_name:before{position:absolute;left:50%;top:9px;transform:translate(-50%);width:15px;height:2px;background:#e61d25;content:''}
-
 
 /* Keyframes */
 @keyframes scrl_ani{

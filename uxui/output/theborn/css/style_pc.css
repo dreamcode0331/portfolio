@@ -227,7 +227,6 @@
 .brand_list .brand_item .link .bottom .brand_name{display:inline-block;position:relative;color:#fff}
 .brand_list .brand_item .link .bottom .brand_name:before{position:absolute;left:50%;top:18px;transform:translate(-50%);width:30px;height:2px;background:#e61d25;content:''}
 
-
 /* Keyframes */
 @keyframes scrl_ani{
 	0%, 100%{top:730px}

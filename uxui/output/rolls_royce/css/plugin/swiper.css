@@ -167,10 +167,10 @@
   text-transform: none;
   font-variant: initial;
 }
-.swiper-button-next,
-.swiper-container-rtl .swiper-button-prev {
-  right: 10px;
-  left: auto;
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  left: 10px;
+  right: auto;
 }
 .swiper-button-prev:after,
 .swiper-container-rtl .swiper-button-next:after {

@@ -1,15 +1,33 @@
 /* MyriadPro */
 @font-face {
-  font-family:'MyriadPro';
-  src: url('../../font/MyriadPro-Regular.woff') format('woff');
+  font-family:'Montserrat';
+  src: url('../../font/MontserratThin.woff') format('woff'),
+       url('../../font/MontserratThin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:'Montserrat';
+  src: url('../../font/MontserratLight.woff') format('woff'),
+       url('../../font/MontserratLight.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:'Montserrat';
+  src: url('../../font/MontserratRegular.woff') format('woff'),
+       url('../../font/MontserratRegular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family:'MyriadPro';
-  src: url('../../font/MyriadPro-Bold.woff') format('woff');
-  font-weight: 800;
+  font-family:'Montserrat';
+  src: url('../../font/MontserratBold.woff') format('woff'),
+       url('../../font/MontserratBold.woff2') format('woff2');
+  font-weight: 700;
   font-style: normal;
 }
 

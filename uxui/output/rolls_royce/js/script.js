@@ -13,17 +13,24 @@ $(function(){
 			$('.nav').hide();
 		}
 		//window resize
-		// $(window).resize(function(){
-		// 	var winW = $(window).width();
-		// 	console.log("winW : " + winW);
-		// 	if(winW > 320 && $('.nav').is(':hidden')){
-		// 		 $('.nav').removeAttr('style');
-		// 	}
-		// });
+		$(window).resize(function(){
+			var winW = $(window).width();
+			console.log("winW : " + winW);
+
+			// if(winW > 320 && $('.nav').is(':hidden')){
+			// 	 $('.nav').removeAttr('style');
+			// }
+			if(winW > 1023){
+				$('.btn').removeClass('large').addClass('medium');
+		  } else {
+				$('.btn').addClass('large').removeClass('medium');
+			}
+		});
 	});
 
 	// mobile menu
 	$('.menu').removeClass('is_open');
+	$('.nav').hide();
 	$('.menu').on('click', function(){
 		$('.nav').slideToggle('is_open');
 		

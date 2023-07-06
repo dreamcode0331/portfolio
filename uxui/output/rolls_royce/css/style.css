@@ -125,7 +125,7 @@
 	.exterior .inner{display:flex}
 	.exterior .box{flex:1}
 	.exterior .box:not(:first-of-type){margin-left:20px;padding-top:0}
-	.exterior .text_desc{min-height:96px}
+	.exterior .text_desc{min-height:116px}
 
 	.gallary .swiper-container.gallery-top{height:570px}
 }

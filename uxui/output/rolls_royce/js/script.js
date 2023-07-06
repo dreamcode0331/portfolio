@@ -1,5 +1,5 @@
 $(function(){
-	//fixed navigation
+
 	$(window).scroll(function(){
 		var winW = $(window).width();
 		if($(document).scrollTop()>0){
@@ -12,15 +12,13 @@ $(function(){
 			$('.icon_bar').removeClass('is_open');
 			$('.nav').hide();
 		}
-		//window resize
-		$(window).resize(function(){
-			var winW = $(window).width();
-			console.log("winW : " + winW);
+		if(winW >= 1024){
+			$('.btn').removeClass('large').addClass('medium');
+		}
 
-			// if(winW > 320 && $('.nav').is(':hidden')){
-			// 	 $('.nav').removeAttr('style');
-			// }
-			if(winW > 1023){
+		$(window).resize(function(){
+			// console.log("winW : " + winW);
+			if(winW >= 1024){
 				$('.btn').removeClass('large').addClass('medium');
 		  } else {
 				$('.btn').addClass('large').removeClass('medium');
@@ -28,7 +26,6 @@ $(function(){
 		});
 	});
 
-	// mobile menu
 	$('.menu').removeClass('is_open');
 	$('.nav').hide();
 	$('.menu').on('click', function(){
@@ -43,7 +40,6 @@ $(function(){
 		}
 	});
 
-	// 페이지 찾아가기(scroll page 일 경우 사용)
 	$('.page_scroll').click(function(){
 		var $anchor = $(this);
 		var pageTop = $($anchor.attr('href')).offset().top-64;
@@ -53,11 +49,6 @@ $(function(){
 		$('.nav').hide();
 	});
 
-	
-
-
-	
-	// News Section Swiper
 	var mySwiper = new Swiper('.horizon_slide',{
 		slidesPerView: 1.5,
 		spaceBetween: 17,

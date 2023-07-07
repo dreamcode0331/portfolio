@@ -1,0 +1,41 @@
+/* NanumSquareNeo */
+@font-face {
+  font-family:'NanumSquareNeo';
+  src: url('../../font/NanumSquareNeo-aLt.woff') format('woff'),
+       url('../../font/NanumSquareNeo-aLt.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:'NanumSquareNeo';
+  src: url('../../font/NanumSquareNeo-bRg.woff') format('woff'),
+       url('../../font/NanumSquareNeo-bRg.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:'NanumSquareNeo';
+  src: url('../../font/NanumSquareNeo-cBd.woff') format('woff'),
+       url('../../font/NanumSquareNeo-cBd.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:'NanumSquareNeo';
+  src: url('../../font/NanumSquareNeo-dEb.woff') format('woff'),
+       url('../../font/NanumSquareNeo-dEb.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Montserrat */
+@font-face {
+  font-family:'Montserrat';
+  src: url('../../font/MontserratRegular.woff') format('woff'),
+       url('../../font/MontserratRegular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}

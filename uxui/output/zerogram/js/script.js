@@ -1,6 +1,6 @@
 $(function(){
 	var winW = $(window).width();
-	var header = ('.header');
+	var header = $('.header');
 	var navigation = $('.header .nav');
 	var menu = $('.header .menu');
 
@@ -11,18 +11,39 @@ $(function(){
 			header.removeClass('is_fixed');
 		}
 
-		if($(document).scrollTop()==0 && winW<=768){
-			navigation.hide().find.menu.removeClass('is_open');
-		}
+		// if($(document).scrollTop()==0 && winW<=768){
+		// 	navigation.hide().find.menu.removeClass('is_open');
+		// }
 
 		$(window).resize(function(){
-			// console.log("winW : " + winW);
 			if(winW >= 1024){
 				$('.btn').removeClass('large').addClass('medium');
 		  } else {
 				$('.btn').addClass('large').removeClass('medium');
 			}
 		});
+	});
+
+	// [D] 스크롤 감지
+	$('.scroll .gradient').show();
+	$('.scroll').scroll(function(){
+			if($(this)[0].scrollHeight - Math.round($(this).scrollTop()) == $(this).outerHeight()) {
+				$(this).children('.gradient').hide();
+			} else {
+				$('.gradient').show();
+			}
+	});
+
+	$('.review_box').hide();
+	$('.review_box').slice(0, 3).show();
+
+	$('.review .btn').on('click', function(){
+		$(this).parent('.btn_box').siblings('.review_area').find('.scroll').addClass('is_hide');
+		$('.review_box:hidden').slice(0, 1).show(200);
+		if($('.review_box:hidden').length == 0) {
+			$('.review .btn_box').hide();
+			$('.gradient').hide();
+		}
 	});
 
 	$('.menu').removeClass('is_open');

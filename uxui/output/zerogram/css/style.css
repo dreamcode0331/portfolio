@@ -5,25 +5,25 @@
 .wrap{min-width:320px}
 
 /* [Common] Button */
-.btn{display:inline-block;position:relative;font-size:14px;text-align:center;color:#fff;box-sizing:border-box;vertical-align:middle;transition:all 0.4s} 
-.btn:after{position:absolute;left:0;top:0;right:0;bottom:0;border:1px solid #fff;;content:''}
+.btn{display:inline-block;position:relative;font-size:14px;text-align:center;color:#fff;box-sizing:border-box;vertical-align:middle;transition:all 0.3s} 
+.btn:after{position:absolute;left:0;top:0;right:0;bottom:0;border:1px solid #fff;content:''}
 .btn:hover:after,.btn:focus:after{border-width:2px}
 .btn.medium{width:180px;height:40px;line-height:40px} 
 .btn.large{width:100%;height:50px;line-height:50px;font-size:1.6rem;} 
-.btn.gold{background:#b59b6e} 
-.btn.gold:after{border-color:#b59b6e}
-.btn.gold:hover,.btn.gold:focus{background:#9c793d;color:#fff}
-.btn.blur{background: rgba(255,255,255,0.1);backdrop-filter: blur(2px)} 
-.btn.lang:after{display:none}
+.btn.border_black{color:#000}
+.btn.border_black:after{border-color:#000}
+.btn.black{background:#000}
+.btn.black:after{border-color:transparent}
+.btn.black:hover,.btn.black:focus{background:#3f4143;color:#fff}
 
 /* [Common] Text Box */
 .txt_box {padding:2.5rem 1.5rem;text-align:center;}
 .txt {font-size:1.4rem;color:#000;line-height:1.5;letter-spacing:0.1em}
-.tit {padding-top:1rem;font-size:2.2rem;text-align:center;font-weight:700}
+.tit {padding-top:1rem;font-size:2.2rem;text-align:center;font-weight:400}
 .tit:after{display:block;margin:2.5rem 0;width:7rem;height:1px;background:#000;content:''}
 .text_desc{font-size:1.4rem;line-height:1.5}
 .text_desc + .text_desc{padding-top:1.8rem;color:#111}
-.text_overflow{overflow:hidden;display:-webkit-box;text-overflow:ellipsis;-webkit-box-orient:vertical;-webkit-line-clamp:4}
+.text_overflow{overflow:hidden;display:-webkit-box;text-overflow:ellipsis;-webkit-box-orient:vertical;-webkit-line-clamp:2}
 
 /* [Common] Btn Box */
 .btn_box{padding-top:5rem;text-align:center}
@@ -40,7 +40,7 @@
 .header .menu{display:inline-block;padding:2.4rem 2rem}
 .header .menu .icon_bar{display:block;width:2rem;height:2px;margin-top:0.5rem;border-radius:1px;background:#000; transform-origin:center left;transition:all 0.4s}
 .header .menu .icon_bar:first-child{margin-top:0}
-.header .nav{display:flex;flex-direction:column;justify-content:space-evenly;position:absolute;left:0;top:6.4rem;width:100%;height:100vh;border-top:1px solid #666;background:rgba(0,0,0,.9)}
+.header .nav{display:flex;flex-direction:column;justify-content:space-evenly;position:absolute;left:0;top:6.4rem;width:100%;height:100vh;background:rgba(0,0,0,.9)}
 .header .nav .menu_list .menu_item .menu_link{display:block;padding:1.5rem 0;text-align:center;font-size:1.5rem;color:#fff}
 .header.is_fixed{background-color:rgba(0,0,0,0.3);backdrop-filter: blur(2px)}
 .header.is_fixed .menu .icon_bar{background:#fff}
@@ -56,22 +56,22 @@
 .main_banner .txt_box .txt{display:inline-block;padding-top:2rem;font-size:1.8rem;color:#fff;font-weight:300}
 
 .section{padding:68px 0;}
+.section .tit_bg{margin:0 auto 3rem;width:116px;background:#000}
 .intro{background:#f1f1f1}
 .intro .txt_box{padding:2.5rem 1.5rem 0;text-align:left;color:#000}
-.intro .txt_box .tit{font-family:'Montserrat', sans-serif}
 .horizon_slide .swiper-pagination-bullet{border:1px solid #fff;background:transparent}
    
-.feafure{background:#fff;font-family:'Montserrat', sans-serif}
-.feafure .tit_bg{margin:0 auto 3rem;width:160px;background:#000}
+.feafure{background:#fff}
 .feafure .tit{padding:0.5rem 0;color:#fff}
 .feafure .tit:after{display:none}
 .feafure .inner{padding:0 15px 4.6rem;text-align:center}
 .feafure .inner + .inner{padding:4.6rem 15px;background:#f1f1f1}
 .feafure .inner + .inner div:not(:first-of-type){padding-top:4rem}
+.feafure .inner .detail_box{overflow:hidden}
 .feafure .inner .detail_box:not(:first-of-type){padding-top:10rem}
+.feafure .detail .img_area{overflow:hidden}
 .feafure .detail .img_area .img_box{padding-top:5rem}
-.feafure .inner + .inner .detail .txt{display:block;padding-top:1.5rem;font-family:'NanumSquareNeo', sans-serif}
-.feafure .table {font-family:'NanumSquareNeo', sans-serif}
+.feafure .inner + .inner .detail .txt{display:block;padding-top:1.5rem;}
 .feafure .table table{width:100%}
 .feafure .table thead th{padding:0.5rem 0;background:#000;font-size:1.4rem;text-align:center;color:#fff}
 .feafure .table tbody tr:nth-child(odd){background:#f9f9f9}
@@ -79,34 +79,45 @@
 .feafure .table td {color:#666}
 .feafure .table th, .feafure .table td{padding:0.8rem 1.2rem;font-size:1.2rem}
 
+.pricing {width:100%; min-height:334px; position:relative; background:url(../images/buy.jpg) no-repeat 45%/cover; background-attachment:fixed; text-align:center;}
+.pricing .txt_box{color:#fff}
+.pricing .tit:after{margin:2.5rem auto;background:#fff}
 
-
-
-/* Pricing Section */
-.pricing_section {width:100%; min-height:334px; position:relative; background:url(../images/buy.jpg) no-repeat 45%/cover; background-attachment:fixed; text-align:center;}
-.pricing_section .pricing_text {width:94%; margin-left:auto; margin-right:auto;}
-.pricing_section .pricing_text h2, .pricing_section .pricing_text p:last-child {padding-bottom:22px;}
-.pricing_section .pricing_text h2 {font-size:26px; color:#fff;}
-.pricing_section .pricing_text p  {font-size:12px; color:#fff;}
-.pricing_section .buy_btn {width:83.334%; max-width:250px; padding:1px 0; font-size:20px; color:#fff; border: 3px solid #fff; margin-top:30px; transition:.5s; -webkit-animation: blink 2s infinite; -moz-animation: blink 2s infinite; animation: blink 2s infinite;}
-
-/* Review Section */
-.review_section .review_tit {width:35%; text-align:center; margin:0 auto;}
-.review_section .review_tit h2 {padding-bottom:3px; font-size:24px; line-height:1; color:#fff; background:#000;}
-.review_section .review_cont {padding-top:47px; margin: 0 auto;}
-.review_section .col_6 {width:100%; padding-bottom:18px; position:relative;}
-.review_section .col_6 .col_2 {float:left;  width:33%; min-width:90px;}
-.review_section .col_6 .col_2 img {display:block;}
-.review_section .col_6 .col_4 {float:left; width:60.1875%; margin-left:5%; position:relative;}
-.review_section .col_6 .col_4 .star_icon {float:left; font-size:12px; color:#ff472d;}
-.review_section .col_6 .col_4 p:nth-of-type(1) {padding-left:90px; font-size:12px; color:#666;}
-.review_section .col_6 .col_4 p:nth-of-type(2) {display:-webkit-box; height:40px; line-height:20px; overflow:hidden; text-overflow:ellipsis; -webkit-line-clamp:3; -webkit-box-orient:vertical;}
-.review_section .col_6 .col_4 strong {color:#222;}
-.review_section .review_more {width:200px; height:40px; line-height:40px; margin:0 auto; text-align:center; border:1px solid #666; font-size:15px; color:#333; transition:0.5s;}
-.review_section .review_more:hover {background:#666; color:#fff;}
+.review{background:#f1f1f1}
+.review .inner{padding:0 15px}
+.review .tit{padding:0.5rem 0;color:#fff}
+.review .tit:after{display:none}
+.review .review_area{position:relative}
+.review .scroll{overflow:auto;min-height:200px;max-height:400px}
+.review .scroll.is_hide{max-height:100%;}
+.review .scroll .gradient{display:none;position:absolute;left:0;right:0;bottom:0;height:30px;background:linear-gradient(transparent, #f1f1f1);content:''}
+.review .review_box{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:20px 1fr;align-items:center;margin-top:1.5rem;font-size:0}
+.review .img_box{grid-row:1/3;min-width:9rem}
+.review .rating{margin-left:0.8rem;min-width:90px}
+.review .rating .inp_box{display:inline-block;width:14px;height:14px}
+.review .rating .inp_box:not(:first-child){margin-left:0.3rem}
+.review .rating .inp_box .lbl{display:inline-block;width:100%;height:100%}
+.review .rating .inp_box .lbl:before{display:inline-block;;width:1.4rem;height:1.4rem;background-image:url(../images/ico_star_rating.svg);background-repeat:no-repeat;background-position:center;background-size:cover;vertical-align:middle;content:''}
+.review .date{margin-top:0.1rem;font-size:1.2rem;color:#666}
+.review .txt_box{grid-column:2/5;padding:1rem;text-align:left}
+.review .txt{font-size:13px;font-weight:700}
+.review .text_desc{height:4rem;font-size:1.3rem}
+/* .review .review_tit {width:35%; text-align:center; margin:0 auto;}
+.review .review_tit h2 {padding-bottom:3px; font-size:24px; line-height:1; color:#fff; background:#000;}
+.review .review_cont {padding-top:47px; margin: 0 auto;}
+.review .col_6 {width:100%; padding-bottom:18px; position:relative;}
+.review .col_6 .col_2 {float:left;  width:33%; min-width:90px;}
+.review .col_6 .col_2 img {display:block;}
+.review .col_6 .col_4 {float:left; width:60.1875%; margin-left:5%; position:relative;}
+.review .col_6 .col_4 .star_icon {float:left; font-size:12px; color:#ff472d;}
+.review .col_6 .col_4 p:nth-of-type(1) {padding-left:90px; font-size:12px; color:#666;}
+.review .col_6 .col_4 p:nth-of-type(2) {display:-webkit-box; height:40px; line-height:20px; overflow:hidden; text-overflow:ellipsis; -webkit-line-clamp:3; -webkit-box-orient:vertical;}
+.review .col_6 .col_4 strong {color:#222;}
+.review .review_more {width:200px; height:40px; line-height:40px; margin:0 auto; text-align:center; border:1px solid #666; font-size:15px; color:#333; transition:0.5s;}
+.review .review_more:hover {background:#666; color:#fff;} */
 
 /* Footer */
-.footer {font-size:13px; background:#c2c2c2; padding:15px 0 45px;}
+.footer {display:none;font-size:13px; background:#c2c2c2; padding:15px 0 45px;}
 
 /* keyframes */
 @keyframes blink{
